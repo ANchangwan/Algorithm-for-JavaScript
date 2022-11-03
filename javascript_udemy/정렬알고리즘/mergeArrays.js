@@ -31,5 +31,5 @@ function mergeSort(arr:number[]=[]){
   return merge(left, right);
 }
 
-console.log(mergeSort([5,1,3,"di",8,7]))
+console.log(mergeSort([5,1,3,8,7]))
                    
