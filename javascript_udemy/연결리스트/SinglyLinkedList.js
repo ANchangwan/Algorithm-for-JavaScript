@@ -17,7 +17,15 @@ class SinglyLinkedList {
 		if (!this.head) {
 			this.head = newNode;
 			this.tail = this.head;
-		}
-		while (this.head !== null) {}
+		}else{
+            this.tail.next = newNode;
+            this.tail = newNode;
+        }
+        this.length++;
+        return this;
 	}
 }
+
+
+var list = new SinglyLinkedList();
+list.push("hello");
